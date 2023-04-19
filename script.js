@@ -1,8 +1,8 @@
 // var allDiv=document.querySelectorAll('.card-div');
 // console.log(allDiv);
 
-var ShriGaneshAarti=`<h3 class="arti-text-div">श्रीगणेश जी की आरती</h3>
-<pre>
+var ShriGaneshAarti=`<h3 class="arti-text-div ">श्रीगणेश जी की आरती</h3>
+<pre class="theme" id="preTag" >
 
 जय गणेश जय गणेश जय गणेश देवा।
 माता जाकी पार्वती पिता महादेवा॥
@@ -33,7 +33,7 @@ var ShriGaneshAarti=`<h3 class="arti-text-div">श्रीगणेश जी �
 माता जाकी पार्वती पिता महादेवा॥</pre>`;
 
 var hanumanAarti=`<h3 class="arti-text-div">हनुमान  जी की आरती</h3>
-<pre>
+<pre class="theme" id="preTag">
 आरती कीजै हनुमान लला की ।
 दुष्ट दलन रघुनाथ कला की ॥
 
@@ -77,7 +77,7 @@ var hanumanAarti=`<h3 class="arti-text-div">हनुमान  जी की �
 ॥ इति संपूर्णंम् ॥
 </pre>`;
 var ShivAarti=`<h3 class="arti-text-div">शिव जी की आरती</h3>
-<pre>
+<pre class="theme" id="preTag">
 ॐ जय शिव ओंकारा… आरती
 जय शिव ओंकारा, ॐ जय शिव ओंकारा ।
 ब्रह्मा, विष्णु, सदाशिव, अर्द्धांगी धारा ॥
@@ -116,7 +116,7 @@ var ShivAarti=`<h3 class="arti-text-div">शिव जी की आरती</h
 ॐ जय शिव ओंकारा। 
 </pre>`;
 var laxmiAarti=`<h3 class="arti-text-div">लक्ष्मी  जी की आरती</h3>
-<pre>
+<pre class="theme" id="preTag">
 मां लक्ष्‍मी की आरती
 मां लक्ष्‍मी की आरती
 ॐ जय लक्ष्मी माता,
@@ -166,7 +166,7 @@ var laxmiAarti=`<h3 class="arti-text-div">लक्ष्मी  जी की �
 ॥ॐ जय लक्ष्मी माता...॥
 </pre>`;
 var durgaAarti=`<h3 class="arti-text-div">मां दुर्गा जी की आरती</h3>
-<pre>
+<pre class="theme" id="preTag">
 जय अम्बे गौरी, मैया जय श्यामा गौरी।
 
 तुमको निशदिन ध्यावत, हरि ब्रह्मा शिव री।। जय अम्बे गौरी,...।
@@ -221,7 +221,7 @@ var durgaAarti=`<h3 class="arti-text-div">मां दुर्गा जी �
 
 </pre>`;
 var sarsavatiAarti=`<h3 class="arti-text-div"> सरस्वती जी की आरती</h3>
-<pre>
+<pre class="theme" id="preTag" >
 जय सरस्वती माता,
 मैया जय सरस्वती माता ।
 सदगुण वैभव शालिनी,
@@ -269,9 +269,26 @@ var sarsavatiAarti=`<h3 class="arti-text-div"> सरस्वती जी क�
 त्रिभुवन विख्याता ॥
 </pre>`;
 
+let menuIcon = document.querySelector('#menu-icon');
 
 
+menuIcon.onclick=()=>{
+    document.body
+    menuIcon.classList.toggle("bxs-sun");
+    document.body.classList.toggle('theme-white');
 
+    // if(document.querySelector("#preTag")!==null){
+    //     let preTag = document.querySelector("#preTag");
+    //     preTag.classList.toggle('theme-text-white');
+
+    // }
+}; 
+
+// function theme(){
+//     console.log("hello");
+//     const themeid = document.getElementById("themeIcon");
+//     themeid.classList.toggle('bxs-sum');
+// }
 
 
 function funShow(valuethis){
