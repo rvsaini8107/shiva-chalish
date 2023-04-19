@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+    font-family: 'Abel', sans-serif;
+}
+body{
+    display: flex;
+    /* min-height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, #000000, #434343);
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    clip-path: circle( 27% at left 12%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+.container{
+  padding: 2%;
+  margin: 2%;
+}
+  .img-div img {
+    width: 50%;
+  }
+
+.card-div.card-div-4 img {
+  width: 50%;
+}
+  .main-div {
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+    
+  }
+  .card-div {
+    border: 1px solid yellow;
+    height: 250px;
+    border-radius: 31px 0;
+    box-shadow: 0 0 50px #ff480052;
+    padding: 4% 4%;
+    transition: .2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5%;
+  }
+  .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-div:hover {
+  box-shadow: none;
+  transform: scale(1.1,1.1);
+  border: none;
+}
+
+.glow {
+  
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+.show-arti-chalisha-mantar {
+  padding: 5%;
+  margin: 5%;
+}
+.arti {
+  border: 1px solid yellow;
+  height: auto;
+  border-radius: 31px 0;
+  box-shadow: 0 0 50px #ff480052;
+  padding: 4% 4%;
+  transition: .2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: larger;
+}
+.arti-text-div{
+  margin: 5%;
+}
+
+
+@media (max-width:600px){
+  .main-div {
+    
+    grid-template-columns: auto;
+  }
+  .show-arti-chalisha-mantar{
+    margin: 5%;
+    font-size: x-small;
+  }
+
+}
